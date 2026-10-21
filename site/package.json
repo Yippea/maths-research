@@ -1,0 +1,15 @@
+{
+  "name": "maths-research-site",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "prepare-content": "node scripts/generate.mjs",
+    "dev": "npm run prepare-content && astro dev",
+    "build": "npm run prepare-content && astro build",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "@astrojs/starlight": "^0.42.6",
+    "astro": "^7.4.1"
+  }
+}
